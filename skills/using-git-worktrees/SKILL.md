@@ -122,11 +122,8 @@ if [ -f go.mod ]; then go mod download; fi
 Run tests to ensure worktree starts clean:
 
 ```bash
-# Examples - use project-appropriate command
-npm test
-cargo test
-pytest
-go test ./...
+# Examples - Prefer Makefile, else use project-appropriate command
+make test
 ```
 
 **If tests fail:** Report failures, ask whether to proceed or investigate.

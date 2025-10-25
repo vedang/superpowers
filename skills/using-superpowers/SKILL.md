@@ -1,6 +1,6 @@
 ---
 name: using-superpowers
-description: Use when starting any conversation - establishes mandatory workflows for finding and using skills, including using Skill tool before announcing usage, following brainstorming before coding, and creating TodoWrite todos for checklists
+description: Use when starting any conversation - establishes mandatory workflows for finding and using skills, including using Skill tool before announcing usage, following brainstorming before coding, and creating beads todos for checklists
 ---
 
 <EXTREMELY-IMPORTANT>
@@ -50,7 +50,7 @@ If a skill for your task exists, you must use it or you will fail at your task.
 
 ## Skills with Checklists
 
-If a skill has a checklist, YOU MUST create TodoWrite todos for EACH item.
+If a skill has a checklist, YOU MUST create beads todo task items for EACH item. Run `bd quickstart` to learn how to use beads. Run `bd init` if there is no `.beads` folder in this project.
 
 **Don't:**
 - Work through checklist mentally
@@ -58,7 +58,7 @@ If a skill has a checklist, YOU MUST create TodoWrite todos for EACH item.
 - Batch multiple items into one todo
 - Mark complete without doing them
 
-**Why:** Checklists without TodoWrite tracking = steps get skipped. Every time. The overhead of TodoWrite is tiny compared to the cost of missing steps.
+**Why:** Checklists without beads tracking = steps get skipped. Every time. The overhead of beads is tiny compared to the cost of missing steps.
 
 ## Announcing Skill Usage
 
@@ -96,6 +96,6 @@ Your human partner's specific instructions describe WHAT to do, not HOW.
 3. Announce you're using it
 4. Follow what it says
 
-**Skill has checklist?** TodoWrite for every item.
+**Skill has checklist?** beads for every item.
 
 **Finding a relevant skill = mandatory to read and use it. Not optional.**

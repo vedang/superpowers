@@ -13,7 +13,7 @@ Assume they are a skilled developer, but know almost nothing about our toolset o
 
 **Announce at start:** "I'm using the writing-plans skill to create the implementation plan."
 
-**Context:** This should be run in a dedicated worktree (created by brainstorming skill).
+**Context:** This should be run in a dedicated branch (created by running the `jj new` command).
 
 **Save plans to:** `docs/plans/YYYY-MM-DD-<feature-name>.md`
 
@@ -64,7 +64,7 @@ def test_specific_behavior():
 
 **Step 2: Run test to verify it fails**
 
-Run: `pytest tests/path/test.py::test_name -v`
+Run: `uv run pytest tests/path/test.py::test_name -v`
 Expected: FAIL with "function not defined"
 
 **Step 3: Write minimal implementation**
@@ -76,14 +76,13 @@ def function(input):
 
 **Step 4: Run test to verify it passes**
 
-Run: `pytest tests/path/test.py::test_name -v`
+Run: `uv run pytest tests/path/test.py::test_name -v`
 Expected: PASS
 
 **Step 5: Commit**
 
 ```bash
-git add tests/path/test.py src/path/file.py
-git commit -m "feat: add specific feature"
+jj desc -m "feat: add minimal implementation for specific feature" && jj new
 ```
 ```
 

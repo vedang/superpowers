@@ -31,7 +31,7 @@ Execute plan by dispatching fresh subagent per task, with code review after each
 
 ### 1. Load Plan
 
-Read plan file, create TodoWrite with all tasks.
+Read plan file, create beads with all tasks. Run the command `bd quickstart` to learn how to use beads.
 
 ### 2. Execute Task with Subagent
 
@@ -77,6 +77,7 @@ Task tool (superpowers:code-reviewer):
 ### 4. Apply Review Feedback
 
 **If issues found:**
+- Create bug tasks using beads to keep track of these issues
 - Fix Critical issues immediately
 - Fix Important issues before next task
 - Note Minor issues
@@ -88,7 +89,7 @@ Task tool (superpowers:code-reviewer):
 
 ### 5. Mark Complete, Next Task
 
-- Mark task as completed in TodoWrite
+- Mark task as completed in beads
 - Move to next task
 - Repeat steps 2-5
 
@@ -111,7 +112,7 @@ After final review passes:
 ```
 You: I'm using Subagent-Driven Development to execute this plan.
 
-[Load plan, create TodoWrite]
+[Load plan, create bead]
 
 Task 1: Hook installation script
 

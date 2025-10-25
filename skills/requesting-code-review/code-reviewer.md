@@ -17,14 +17,10 @@ You are reviewing code changes for production readiness.
 
 {PLAN_REFERENCE}
 
-## Git Range to Review
-
-**Base:** {BASE_SHA}
-**Head:** {HEAD_SHA}
+## JJ Range to Review
 
 ```bash
-git diff --stat {BASE_SHA}..{HEAD_SHA}
-git diff {BASE_SHA}..{HEAD_SHA}
+jj diff --from @--
 ```
 
 ## Review Checklist
